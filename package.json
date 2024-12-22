@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/DineshKuppan/harmony-playwright-framework"
   },
-  "author": "",
+  "author": "Dineshkumar Kuppan",
   "license": "ISC",
   "dependencies": {
     "allure-commandline": "^2.29.0",
