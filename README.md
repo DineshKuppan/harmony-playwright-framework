@@ -6,6 +6,10 @@ git clone git@github.com:DineshKuppan/harmony-playwright-framework.git
 cd harmony-playwright-framework
 ```
 
+### Upload reports & results to AWS S3
+
+[AWS S3 Uploader Example](https://www.netguru.com/blog/automated-testing-optimization)
+
 #### Download & Instal Node.JS dependencies 
 ```
 npm install -s
