@@ -1,4 +1,3 @@
-import PlaywrightTestUtility from '../../helpers/pages/pageUtils';
 import { test, expect } from "@playwright/test";
 
 // test('Validate title of Example.com', async () => {

@@ -1,5 +1,5 @@
 const exec = require('child_process').execSync;
-import logger from './../helpers/logger';
+import logger from './../src/helpers/utils/logger';
 import fs from 'fs';
 import path from 'path';
 

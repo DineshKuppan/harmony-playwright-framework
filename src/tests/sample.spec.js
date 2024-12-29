@@ -1,4 +1,4 @@
-import { PlaywrightManager, elementUtils, browserUtils, test, expect } from '../../src';
+import { elementUtils, browserUtils, test, expect } from '../../src';
 
 test.describe('Example Domain Tests', () => {
     test('Validate the page title', async ({ page }) => {
