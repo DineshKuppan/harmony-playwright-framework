@@ -37,4 +37,5 @@ npx playwright test --workers 4
 # Single test execution
 ```
 npx playwright test -- tests/playwright.navigate.link.test.ts
+DEFAULT_WORKERS=3 npx playwright test -- src/tests/smoke/harmony.test.ts
 ```
