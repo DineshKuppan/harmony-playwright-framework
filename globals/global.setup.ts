@@ -1,5 +1,7 @@
 import { test as setup } from '@playwright/test';
+import { FileParserUtil, Logger } from '@bytes2gram/harmony-utils';
+import { test, expect } from '@playwright/test';
 
-setup('create new database', async ({ }) => {
-    console.log('creating new database...');
-});
+export default () => {
+    const logger = new Logger();
+};

@@ -9,7 +9,7 @@ const config: PlaywrightTestConfig = {
   fullyParallel: true,
   // Retry on CI only.
   retries: process.env.CI ? 2 : 0,
-  //globalSetup: require.resolve('./globals/global.setup.ts'),
+  globalSetup: require.resolve('./globals/global.setup.ts'),
   globalTeardown: require.resolve('./globals/global-teardown'),
   use: {
     headless: false,
