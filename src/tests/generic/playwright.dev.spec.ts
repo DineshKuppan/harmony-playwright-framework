@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import logger from './../helpers/logger';
+import logger from './../../../helpers/logger';
 
 test('has title', async ({ page }) => {
     logger.info(`Start "has title" test`);

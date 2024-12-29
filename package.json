@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "smoke-test" : "npx playwright test --config=playwright.config.ts --grep='smoke'",
+    "regression-test" : "npx playwright test --config=playwright.config.ts --grep='regression'"
+
   },
   "repository": {
     "type": "git",
@@ -13,6 +16,7 @@
   "author": "Dineshkumar Kuppan",
   "license": "ISC",
   "dependencies": {
+    "@bytes2gram/harmony-utils": "file:../harmony-utils",
     "allure-commandline": "^2.29.0",
     "csv-parser": "^3.0.0",
     "experimental-allure-playwright": "^0.0.3",
@@ -21,6 +25,7 @@
     "jest": "^29.7.0",
     "jest-html-reporter": "^3.10.2",
     "mochawesome-merge": "^4.3.0",
+    "pandas-js": "^0.2.4",
     "playwright": "^1.44.0",
     "playwright-core": "^1.44.0",
     "winston": "^3.17.0",

@@ -2,9 +2,11 @@
 import { PlaywrightTestConfig, } from '@playwright/test';
 import * as os from "node:os";
 
+console.log('Default Workers -> ' + process.env.DEFAULT_WORKERS);
+
 const config: PlaywrightTestConfig = {
   // Look for test files in the "tests" directory, relative to this configuration file.
-  testDir: 'tests',
+  testDir: './src/tests',
   // Run all tests in parallel.
   fullyParallel: true,
   // Retry on CI only.
@@ -38,7 +40,7 @@ const config: PlaywrightTestConfig = {
       },
     }],
     ['html', { outputFolder: 'html-report' }]],
-  workers: process.env.CI ? 2 : process.env.DEFAULT_WORKERS,
+  workers: process.env.CI === 'true' ? 1 : Number(process.env.DEFAULT_WORKERS),
   outputDir: 'test-results/'
 };
 export default config;
