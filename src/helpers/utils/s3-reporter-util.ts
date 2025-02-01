@@ -8,7 +8,7 @@ import {
     Provider,
     Endpoint,
     EndpointV2,
-    UserAgent,
+    UserAgent
   } from "@smithy/types";
   import type { Reporter } from "@playwright/test/reporter";
   import { createReadStream } from "fs";
