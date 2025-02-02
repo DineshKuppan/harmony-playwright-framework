@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
+          scope: '@bytes2gram'
+          always-auth: true
+          token: ${{ secrets.NPM_ACCESS_TOKEN }}
       - name: Install CI dependencies 
         run: npm ci
       - name: Publish to npm
